@@ -26,7 +26,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     cursor: pointer;
 }
 
@@ -39,4 +39,29 @@ html {
 
 .secondary-plus {
     color: white;
+}
+
+/* POPUP */
+.popup-container {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    top: 50vh;
+    left: 50vw;
+    width: 25rem;
+    height: 25rem;
+    transform: translate(-50%, -50%);
+    background-color: red;
+
+    padding: 1rem 2rem;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-close {
+    cursor: pointer;
 }
