@@ -1,0 +1,42 @@
+/*  INIT APP  */
+html {
+    font-size: 10px;
+    background-color: #b9bfff;
+}
+
+#app {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.initial-main-container {
+    height: 69.1em;
+    background-color: #4066e0;
+}
+
+.initial-secondary-container {
+    height: 21.3rem;
+    background-color: #c3c8fc;
+}
+
+.initial-secondary-container,
+.initial-main-container {
+    margin: 4rem auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+}
+
+.plus,
+.secondary-plus {
+    color: black;
+    font-size: 4.4rem;
+    font-weight: bold;
+}
+
+.secondary-plus {
+    color: white;
+}
