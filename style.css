@@ -4,6 +4,16 @@ html {
     background-color: #b9bfff;
 }
 
+/*  */
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/*  */
 #app {
     max-width: 1366px;
     margin: 0 auto;
@@ -43,7 +53,6 @@ html {
 
 /* POPUP */
 .popup-container {
-    display: none;
     position: absolute;
     z-index: 999;
     top: 50vh;
@@ -51,7 +60,7 @@ html {
     width: 25rem;
     height: 25rem;
     transform: translate(-50%, -50%);
-    background-color: red;
+    background-color: white;
 
     padding: 1rem 2rem;
 }
