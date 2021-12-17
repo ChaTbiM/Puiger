@@ -21,15 +21,23 @@
             <div id="secondary-plus" class="secondary-plus">&plus;</div>
         </div>
     </div>
-    <div id="popup-container" class="popup-container">
+    <div id="popup-container" class="popup-container hide">
         <!-- POPUP -->
         <div id="popup-header" class="popup-header">
             <p id="popup-title">Create Container</p>
             <p id="popup-close" class="popup-close">X</p>
         </div>
-        <div id="popup-content"></div>
+        <div id="popup-content" class="popup-content">
+            <form id="container__type__form" class="container__type__form">
+                <label class="container__type__form__label" for="row"><input class="container__type__form__input"
+                        type="radio" name="type" value="fullWidth"> <span>Full Width</span> </label><br>
+                <label class="container__type__form__label" for="column"><input class="container__type__form__input"
+                        type="radio" name="type" value="contained"> <span>Contained</span></label><br>
+            </form>
+            <button type="submit" class="default-btn next-btn">next</button>
+        </div>
     </div>
-
+    <div class="overlay hide"></div>
 </body>
 
 </html>
