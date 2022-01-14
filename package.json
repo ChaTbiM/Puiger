@@ -1,0 +1,27 @@
+{
+  "name": "puiger",
+  "version": "0.0.1",
+  "description": "visual page builder",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "start": "node esbuild.config.js -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChaTbiM/Puiger.git"
+  },
+  "author": "Mustapha Chatbi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChaTbiM/Puiger/issues"
+  },
+  "homepage": "https://github.com/ChaTbiM/Puiger#readme",
+  "dependencies": {
+    "esbuild": "^0.14.11"
+  },
+  "devDependencies": {
+    "esbuild-serve": "^1.0.1"
+  }
+}
