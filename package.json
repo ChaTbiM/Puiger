@@ -4,11 +4,6 @@
   "description": "visual page builder",
   "main": "app.js",
   "type": "module",
-  "engines": {
-    "node":">=16.3.2",
-    "npm":">=8.3.1"
-  },
-  "engineStrict": true,
   "scripts": {
     "build": "node esbuild.config.js",
     "start": "node esbuild.config.js -w"
