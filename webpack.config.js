@@ -1,32 +1,30 @@
-const path = require('path');
+const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  devtool: 'source-map',
+  devtool: "source-map",
   entry: {
-    main: path.resolve(__dirname, 'src/index.ts')
+    main: path.resolve(__dirname, "src/index.ts"),
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'index.js',
+    path: path.resolve(__dirname, "dist"),
+    filename: "index.js",
     clean: true,
   },
   devServer: {
-    static: path.resolve(__dirname, 'dist'),
+    static: path.resolve(__dirname, "dist"),
     open: true,
     compress: true,
     hot: true,
   },
   plugins: [
     new CopyPlugin({
-      patterns: [
-        { from: "public" },
-      ],
+      patterns: [{ from: "public" }],
     }),
   ],
   resolve: {
-    extensions: ['', '.js', '.ts']
+    extensions: ["", ".js", ".ts"],
   },
   module: {
     rules: [
@@ -41,11 +39,10 @@ module.exports = {
                 syntax: "typescript",
                 decorators: true,
               },
-            }
-          }
-        }
-      }
-    ]
+            },
+          },
+        },
+      },
+    ],
   },
-
 };

@@ -1,6 +1,6 @@
-import { render } from 'lit'
-import App from './App'
+import { render } from "lit";
+import App from "./App";
 
+const rootAppSelector: HTMLElement = document.querySelector("body");
 
-const rootAppSelector: HTMLElement = document.querySelector('#root');
 render(App(), rootAppSelector);

@@ -1,5 +1,17 @@
 {
+    "include": [
+        "src/**/*"
+    ],
     "compilerOptions": {
         "experimentalDecorators": true,
+        "useDefineForClassFields": false,
+        "plugins": [
+            {
+                "name": "ts-lit-plugin",
+                "rules": {
+                    "no-missing-import": "off"
+                },
+            }
+        ],
     },
 }
